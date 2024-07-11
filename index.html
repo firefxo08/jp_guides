@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: white !important;
+    }
+    .bg-primary {
+      background-color: blue !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #81c417 !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: orange !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #17a2b8 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">일본 여행 가이드 - 10206 김재욱</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>일본은 동아시아에 위치한 섬나라로, 전통 문화와 현대 기술의 조화가 돋보이는 곳이다. <br> 뛰어난 경제력과 기술력을 바탕으로 자동차,애니메이션과 만화 등 다양한 분야에 뛰어난 두각을 나타내고 있다. <br>사회적으로 예의주시와 조화를 중시하며, 자연 경관도 매우 아름다워 많은 관광객들이 찾는 곳이다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/jp_cherry.jpg" class="d-block w-100" alt="일본 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/jp_disneyland.webp" class="d-block w-100" alt="일본 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/jp_nagasaki.jpg" class="d-block w-100" alt="일본 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/jp_ramen.jpg" class="d-block w-100" alt="일본 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/jp_rotppongi.jpg" class="d-block w-100" alt="일본 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">먹거리</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/jp_ramen_infood.jpg" alt="일본 먹거리 1" class="img-fluid">
+            <p>중국의 수타 탕면인 라몐이 일본에서 현지화되어 만들어진 일본식 중화 요리. 종류가 다양하다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/jp_takoyaki_infood.jpg" alt="일본 먹거리 2" class="img-fluid">
+            <p>밀가루 반죽에 잘게 썬 문어, 파, 양배추, 베니쇼가를 넣어 동그랗게 구워내 가쓰오부시와 소스를 뿌려 먹는 일본의 먹거리.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/jp_sushi_infood.jpg" alt="일본 먹거리 3" class="img-fluid">
+            <p>어패류의 살이나 유부 달걀과 같은 식재료를 배합초에 절인 쌀밥 위에 올려 만드는 음식</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">일본 라멘의 역사</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/jp_ramen_detail_infood.jpg" alt="일본 역사 1" class="img-fluid">
+          <p>라멘은 중국어 '라몐'에서 비롯되었는데 이 라몐을 국물에 말아 내놓는 중국 요리 '탕면'이 일본에서 현지화되며 점점 독자적인 형태로 변화한 것이 오늘날의 라면 원형이다. <br> 구체적으로 일본 요리 라멘으로의 전환점이 언제였는지는 명확하지 않지만, 주류 설로는 1870년 요코하마 발생설과 1910년 도쿄 아사쿠사 발생설, 1922년 삿포로 발생설 세 가지가 있다. 그리고 세 발생설 모두 중국 요리가 라멘의 기원임을 명시하고 있다. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">타코야키의 역사</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/jp_takoyaki_detail_infood.png" alt="일본 역사 2" class="img-fluid">
+          <p>타코야키는 일본 오사카의 대중적인 음식으로 1935년경 '오사카의 아이즈야'라는 가게에서 처음 생김. 당시 밀가루 반죽 안에 곤약, 양배추, 파 ,텐카스(튀김 부스러기)가 들어간 '라디오야키'가 있었는데, 이 라디오야키에 문어를 넣기 시작해 오늘날의 타코야키가 탄생함.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">스시의 역사</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/jp_sushi_detail_infood.jpg" alt="일본 역사 3" class="img-fluid">
+          <p>초밥은 원래 보존 식품으로 시작되었다. 쌀에 식초를 섞어 생선을 보존하는 방법에서 유래했으며, 시간이 지나며 현재의 형태로 발전하였다. <br> 초밥의 역사는 일본 문화와 밀접하게 연관되어 있으며 전통적인 초밥의 맛과 형태는 수백 년 동안 이어져 내려오고 있다. <br> 나레즈시 : 가장 오래된 형태의 초밥으로, 발효된 생선과 쌀을 사용. <br> 하야즈시 : 식초를 사용하여 쌀을 신속하게 발효시키는 방법. <br> 에도마에즈시 : 도쿄 지역에서 시작된 신선한 해산물을 사용하는 현대적인 초밥 스타일. <br> 오시즈시 : 나무 틀을 사용하여 모양을 만든 압착된 초밥 형태. <br> 치라시즈시 : 다양한 재료를 쌀 위에 흩뿌려 만드는 초밥.</p>
+        </div> 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/jp_sensoji_inplace.jpg" alt="일본 관광지 1" class="img-fluid">
+            <p>센소지 사원은 화려한 전통양식 건축물로 알려져 있다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/jp_tokyotower_inplace.jpg" alt="일본 관광지 2" class="img-fluid">
+            <p>도쿄 타워는 프랑스의 에펠탑을 모방하여 만들어졌으며 정식 명칭은 일본 전파탑이다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/jp_disneyland_inplace.jpg" alt="일본 관광지 3" class="img-fluid">
+            <p>일본 디즈니 랜드는 세계의 디즈니 공원들 중 성공한 곳 중 하나이다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">센소지 사원의 역사</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/jp_sensoji_detail_inplace.jpg" alt="일본 관광지 1" class="img-fluid">
+          <p>전설에 따르면 서기 628년 한 어부가 스미다강에서 관음상을 찾았고, 이 여신상을 봉헌하고자 센소지 사원을 지었다고 한다. <br> 오랜 역사에 걸쳐 본당은 수없이 무너졌으나, 일본 전역에서 모인 기부금 덕분에 재건할 수 있었다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">도쿄 타워 역사</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/jp_tokyotower_detail_inplace.jpg" alt="일본 관광지 2" class="img-fluid">
+          <p>1953년 일본의 국영방송인 NHK가 설립되며 대규모 방송 송신탑이 필요했다. <br> 도쿄 타워는 에펠탑 설계를 기반으로 1958년에 완공되었다. <br> 높이 333m로 준공 당시에는 세계에서 가장 높은 독립식 타워였다. 일본에서 가장 높은 건물이라는 자리는 그 뒤로도 꾸준히 수성하다 2010년 스카이트리가 생기면서 자리를 내주게 되었다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">일본 디즈니 랜드 역사</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/jp_disneyland_detail_inplace.jpg" alt="일본 관광지 3" class="img-fluid">
+          <p>1983년 4월 15일 일본 치바현 우라야스시에서 도쿄 디즈니랜드가 오픈을 했다. <br> 도쿄디즈니랜드는 미키마우스를 만든 미국 월트 디즈니를 모티브로 한 테마파크이다. <br> 미국 외에 디즈니랜드가 오픈을 한 것은 도쿄가 세계최초라고 한다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        아래 영상을 통해 일본 여행의 팁들을 확인하세요!
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="800" height="450" src="https://www.youtube.com/embed/PLNkzrivRA8?si=pp3ft0S6TF2bmEZp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 일본 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
